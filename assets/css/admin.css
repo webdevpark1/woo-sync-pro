@@ -1,0 +1,667 @@
+/* Enhanced WooCommerce Sync Pro - Admin Styles */
+
+.ewcs-pro-dashboard {
+    background: #f8fafc;
+    min-height: calc(100vh - 160px);
+    padding: 20px 0;
+}
+
+.ewcs-pro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ewcs-pro-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+}
+
+.ewcs-pro-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.ewcs-pro-header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.ewcs-pro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.ewcs-pro-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.ewcs-pro-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.ewcs-pro-card h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ewcs-pro-card h2::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.ewcs-pro-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.ewcs-pro-stat {
+    text-align: center;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.ewcs-pro-stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.ewcs-pro-stat-label {
+    font-size: 12px;
+    color: #718096;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.ewcs-pro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.ewcs-pro-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    justify-content: center;
+}
+
+.ewcs-pro-btn:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+.ewcs-pro-btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.ewcs-pro-btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.ewcs-pro-btn-secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.ewcs-pro-btn-secondary:hover {
+    background: #cbd5e0;
+    color: #2d3748;
+}
+
+.ewcs-pro-btn-success {
+    background: #48bb78;
+    color: white;
+}
+
+.ewcs-pro-btn-success:hover {
+    background: #38a169;
+    color: white;
+}
+
+.ewcs-pro-btn-danger {
+    background: #f56565;
+    color: white;
+}
+
+.ewcs-pro-btn-danger:hover {
+    background: #e53e3e;
+    color: white;
+}
+
+.ewcs-pro-btn-warning {
+    background: #ed8936;
+    color: white;
+}
+
+.ewcs-pro-btn-warning:hover {
+    background: #dd6b20;
+    color: white;
+}
+
+.ewcs-pro-progress {
+    background: #f7fafc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    display: none;
+}
+
+.ewcs-pro-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ewcs-pro-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.ewcs-pro-progress-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.ewcs-pro-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.ewcs-pro-category-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.ewcs-pro-category-item:hover {
+    background: #f1f5f9;
+    border-color: #667eea;
+}
+
+.ewcs-pro-category-item input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.ewcs-pro-category-info {
+    flex: 1;
+}
+
+.ewcs-pro-category-name {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 2px;
+}
+
+.ewcs-pro-category-count {
+    font-size: 12px;
+    color: #718096;
+}
+
+.ewcs-pro-alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid;
+}
+
+.ewcs-pro-alert-success {
+    background: #f0fff4;
+    border-color: #48bb78;
+    color: #2d3748;
+}
+
+.ewcs-pro-alert-error {
+    background: #fed7d7;
+    border-color: #f56565;
+    color: #2d3748;
+}
+
+.ewcs-pro-alert-warning {
+    background: #fef5e7;
+    border-color: #ed8936;
+    color: #2d3748;
+}
+
+.ewcs-pro-alert-info {
+    background: #ebf8ff;
+    border-color: #4299e1;
+    color: #2d3748;
+}
+
+.ewcs-pro-log {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.ewcs-pro-log-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f7fafc;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.ewcs-pro-log-item:last-child {
+    border-bottom: none;
+}
+
+.ewcs-pro-log-success {
+    color: #48bb78;
+}
+
+.ewcs-pro-log-error {
+    color: #f56565;
+}
+
+.ewcs-pro-log-warning {
+    color: #ed8936;
+}
+
+.ewcs-pro-log-info {
+    color: #4299e1;
+}
+
+.ewcs-pro-form-group {
+    margin-bottom: 25px;
+}
+
+.ewcs-pro-form-label {
+    display: block;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.ewcs-pro-form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.ewcs-pro-form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.ewcs-pro-form-help {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #718096;
+}
+
+.ewcs-pro-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Duplicates Manager Styles */
+.ewcs-duplicates-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ewcs-duplicates-table th,
+.ewcs-duplicates-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ewcs-duplicates-table th {
+    background: #f7fafc;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.ewcs-duplicates-table tr:hover {
+    background: #f8f9fa;
+}
+
+.ewcs-duplicate-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ewcs-duplicate-status.pending {
+    background: #fef5e7;
+    color: #dd6b20;
+}
+
+.ewcs-duplicate-status.resolved {
+    background: #f0fff4;
+    color: #38a169;
+}
+
+.ewcs-duplicate-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.ewcs-duplicate-actions .ewcs-pro-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* Import Mode Selection */
+.ewcs-import-modes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.ewcs-import-mode {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ewcs-import-mode:hover {
+    border-color: #667eea;
+    background: #f7fafc;
+}
+
+.ewcs-import-mode input[type="radio"] {
+    margin-right: 10px;
+}
+
+.ewcs-import-mode.selected {
+    border-color: #667eea;
+    background: #ebf8ff;
+}
+
+.ewcs-import-mode-title {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.ewcs-import-mode-desc {
+    font-size: 13px;
+    color: #718096;
+}
+
+/* Product Edit Enhancements */
+.ewcs-pro-sync-meta .ewcs-sync-field {
+    margin-bottom: 15px;
+}
+
+.ewcs-pro-sync-meta .ewcs-sync-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ewcs-pro-sync-meta .ewcs-sync-field input,
+.ewcs-pro-sync-meta .ewcs-sync-field select {
+    width: 100%;
+}
+
+.ewcs-sync-status {
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.ewcs-sync-status.synced {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ewcs-sync-status.not-synced {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.ewcs-sync-checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.ewcs-sync-checkboxes label {
+    font-weight: normal !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ewcs-sync-info {
+    background: #e7f3ff;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.ewcs-last-sync {
+    color: #666;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .ewcs-pro-container {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ewcs-pro-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ewcs-pro-category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ewcs-pro-actions {
+        flex-direction: column;
+    }
+    
+    .ewcs-pro-btn {
+        justify-content: center;
+    }
+    
+    .ewcs-pro-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ewcs-import-modes {
+        grid-template-columns: 1fr;
+    }
+    
+    .ewcs-sync-checkboxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ewcs-pro-header {
+        padding: 20px;
+    }
+    
+    .ewcs-pro-header h1 {
+        font-size: 24px;
+    }
+    
+    .ewcs-pro-card {
+        padding: 20px;
+    }
+    
+    .ewcs-pro-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation Classes */
+.ewcs-fade-in {
+    animation: ewcsFadeIn 0.5s ease-in;
+}
+
+@keyframes ewcsFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ewcs-pulse {
+    animation: ewcsPulse 2s infinite;
+}
+
+@keyframes ewcsPulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Loading Spinner */
+.ewcs-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    animation: ewcsSpin 1s linear infinite;
+}
+
+@keyframes ewcsSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tooltip */
+.ewcs-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.ewcs-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.ewcs-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.ewcs-tooltip:hover::after,
+.ewcs-tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
